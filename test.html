@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CKEditor 5 – classic editor build – development sample</title>
+	<style>
+		body {
+			max-width: 800px;
+			margin: 20px auto;
+		}
+	</style>
+</head>
+<body>
+
+<div id="editor">
+	<p>This is the editor content.</p>
+</div>
+<script src="./build/ckeditor.js"></script>
+<script>
+	ClassicEditor
+		.create( document.querySelector( '#editor' ) )
+		.then( editor => {
+			//window.editor = editor;
+		} )
+		.catch( err => {
+			//console.error( err.stack );
+		} );
+</script>
+
+</body>
+</html>
