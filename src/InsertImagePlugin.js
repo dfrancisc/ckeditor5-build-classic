@@ -25,7 +25,7 @@ export default class InsertImage extends Plugin {
 
             // Callback executed once the image is clicked.
             view.on( 'execute', () => {
-                alert("aa")
+                // alert("aa")
                 
                 const imageUrl = prompt( 'Image URL' );
 
